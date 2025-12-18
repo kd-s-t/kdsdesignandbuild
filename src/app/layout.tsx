@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
-import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-import { Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+
 import { QueryClientProvider } from "@/components/providers/query-provider";
+import { Toaster } from "@/components/ui/sonner";
+
+import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-display",
@@ -34,11 +34,8 @@ export default function RootLayout({
         className={`${cormorant.variable} ${inter.variable} antialiased`}
       >
         <QueryClientProvider>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner />
-            {children}
-          </TooltipProvider>
+          {children}
+          <Toaster />
         </QueryClientProvider>
       </body>
     </html>

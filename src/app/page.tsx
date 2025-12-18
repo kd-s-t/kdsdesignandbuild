@@ -1,10 +1,10 @@
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import FeaturedProjects from "@/components/FeaturedProjects";
-import About from "@/components/About";
 import Timeline from "@/components/Timeline";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
